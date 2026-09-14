@@ -1,17 +1,17 @@
-<div align="center">
+<div align="center" id="top">
 
 # 🚀 ResumeIQ
 
 **AI-Powered Resume Analysis & Optimization Platform**
 
-An intelligent resume analysis tool that leverages advanced AI to evaluate, optimize, and enhance your resume for maximum impact. Get detailed insights, ATS compatibility scores, skill gap analysis, and personalized career guidance — all in one platform.
+Get your resume evaluated, optimized, and benchmarked by AI — ATS scoring, skill gap analysis, bullet rewrites, and a personalized career roadmap, all in one dashboard.
 
-[![Live Demo](https://img.shields.io/badge/🎯_Live_Demo-Try_Now-FF4B4B?style=for-the-badge)](https://resumeiq-aybfmvsyuvh5mra4savae2.streamlit.app)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
-![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=flat-square)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+[![Live Demo](https://img.shields.io/badge/🎯_Live_Demo-Streamlit-FF4B4B?style=for-the-badge)](https://resumeiq-aybfmvsyuvh5mra4savae2.streamlit.app)
+![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+![Claude](https://img.shields.io/badge/Anthropic_Claude-Primary_Engine-D97757?style=flat-square)
+![Groq](https://img.shields.io/badge/Groq-LLM_Inference-F55036?style=flat-square)
+![Status](https://img.shields.io/badge/status-active-brightgreen?style=flat-square)
 
 </div>
 
@@ -21,26 +21,30 @@ An intelligent resume analysis tool that leverages advanced AI to evaluate, opti
 
 - [Overview](#-overview)
 - [Live Demo](#-live-demo)
-- [Key Features](#-key-features)
-- [Tech Stack](#️-tech-stack)
+- [Features](#-features)
+- [Architecture](#️-architecture)
+- [Analysis Modules](#-analysis-modules)
 - [Getting Started](#-getting-started)
 - [Usage](#-usage)
-- [Example Output](#-example-output)
-- [Features Breakdown](#-features-breakdown)
+- [System Configuration](#-system-configuration)
 - [Performance Metrics](#-performance-metrics)
-- [Privacy & Security](#-privacy--security)
-- [Contributing](#-contributing)
+- [Project Structure](#-project-structure)
+- [Technologies Used](#️-technologies-used)
+- [Security & Privacy](#-security--privacy)
+- [Deployment](#️-deployment)
+- [Best Use Cases](#-best-use-cases)
 - [Roadmap](#-roadmap)
-- [Bug Reports & Feature Requests](#-bug-reports--feature-requests)
-- [Support](#-support)
-- [Acknowledgments](#-acknowledgments)
-- [Statistics](#-statistics)
+- [Contributing](#-contributing)
+- [FAQ](#-faq)
+- [Credits & Contact](#-credits--contact)
 
 ---
 
-## 🎯 Overview
+## 📋 Overview
 
-**ResumeIQ** turns resume review into a data-driven process. Instead of guessing why applications aren't landing interviews, upload your resume and a target job description to get a full breakdown — ATS compatibility, skill gaps, bullet-point rewrites, a personalized career roadmap, and interview prep, all generated in real time by advanced AI models.
+**ResumeIQ** is an AI-powered platform that turns resume review into a data-driven process. Instead of guessing why applications aren't landing interviews, upload a resume and a target job description to get a full breakdown — ATS compatibility, skill gaps, bullet-point rewrites, a personalized career roadmap, and interview prep.
+
+The platform uses **AI-driven scoring and NLP-based parsing** to evaluate resumes, and includes automatic fallback mechanisms so analysis continues smoothly even if a primary LLM provider hits its rate limit.
 
 ---
 
@@ -48,7 +52,7 @@ An intelligent resume analysis tool that leverages advanced AI to evaluate, opti
 
 <div align="center">
 
-### 👉 [**Try ResumeIQ Now**](https://resumeiq-aybfmvsyuvh5mra4savae2.streamlit.app)
+### 👉 [**Launch ResumeIQ**](https://resumeiq-aybfmvsyuvh5mra4savae2.streamlit.app)
 
 *Runs live in your browser — no installation required.*
 
@@ -56,56 +60,26 @@ An intelligent resume analysis tool that leverages advanced AI to evaluate, opti
 
 ---
 
-## ✨ Key Features
+## ✨ Features
 
 <table>
 <tr>
 <td valign="top" width="50%">
 
-### 📊 ATS Evaluation Dashboard
-- **ATS Compatibility Score** — how well your resume passes Applicant Tracking Systems
-- **Resume Quality Analysis** — structure, content, and formatting assessment
-- **Interview Readiness Score** — how effective your resume is at landing interviews
-- **Pass Rate Prediction** — estimated likelihood of passing ATS screening
-
-### 🎯 Smart Resume Analysis
-- **Comprehensive Resume Scoring** — multi-dimensional analysis across technical, experiential, and presentation dimensions
-- **Skill & Keywords Intelligence** — automatic extraction and matching against job requirements
-- **Critical Missing Requirements** — identify gaps for your target role
-- **Resume Quality Evaluation** — formatting, structure, and readability review
-
-### 🔧 Optimization Engine
-- **AI-Powered Bullet Rewriting** — stronger action verbs and impact statements
-- **Formatting & Content Analysis** — pinpoint presentation and content weaknesses
-- **Performance Metrics Extraction** — surface your quantifiable achievements
-- **Interactive Deep-Dives** — explore detailed optimization recommendations
+### 🧠 Analysis System
+- **5 Analysis Modules** — each covering a distinct dimension of resume quality
+- **Multi-Model Pipeline** — collaborative AI scoring across dimensions
+- **NLP-Powered Parsing** — deep resume and job-description extraction
+- **Real-time Interactive Dashboard** — explore results as they're generated
 
 </td>
 <td valign="top" width="50%">
 
-### 🗺️ Career Intelligence
-- **Personalized Career Roadmap** — a tailored 2-year development plan with milestones
-- **Skill Gap Analysis** — clear recommendations for skill development
-- **Target Role Suggestions** — AI-recommended roles based on your profile
-- **Milestone Actions** — specific, actionable steps for career progression
-
-### 💼 Job Matching & Preparation
-- **Smart Job Matching** — positions aligned with your skills and goals
-- **Interview Prep Questions** — role-specific technical and behavioral questions
-- **Response Strategy Blueprint** — a structured approach to answering interview questions
-- **Deep-Dive Interview Guidance** — detailed prep for common and technical questions
-
-### 🔍 Profile Intelligence
-- **GitHub Portfolio Evaluation** — repository metrics and recommendations
-- **LinkedIn Profile Analysis** — SEO tips and completeness assessment
-- **Professional Network Insights** — ways to strengthen your presence
-- **Tech Stack Showcase** — tips for highlighting your technical skills
-
-### 📈 Advanced Analytics
-- **Score Breakdown Radar** — visual strengths and improvement areas
-- **Benchmark Comparisons** — how you stack up against ATS benchmarks
-- **Detailed Metrics Density** — analysis of quantifiable metrics in your resume
-- **Dimension-wise Breakdown** — score analysis across technical, experience, and presentation dimensions
+### ⚙️ Reliability & Monitoring
+- **Real-time Processing** — no batch delays, results as you analyze
+- **Automatic Fallback** — seamless switch between LLM providers
+- **Secure by Design** — no permanent storage of resume data
+- **Score Tracking** — live dashboard with dimension-wise breakdowns
 
 </td>
 </tr>
@@ -113,16 +87,62 @@ An intelligent resume analysis tool that leverages advanced AI to evaluate, opti
 
 ---
 
-## 🛠️ Tech Stack
+## 🏗️ Architecture
+
+### Core Components
+
+| Component | Description |
+|---|---|
+| **Resume Upload & Parser** | Extracts structured content from PDF/DOCX resumes |
+| **ATS Evaluation Dashboard** | Real-time compatibility and quality scoring |
+| **Career Intelligence Hub** | Roadmap generation and skill gap analysis |
+| **System Configuration** | API settings and LLM integration |
+
+### LLM Integration
 
 | Layer | Technology |
 |---|---|
-| **Frontend** | Streamlit |
-| **AI/ML Engine** | GROQ API, Claude AI |
-| **Backend Processing** | Python |
-| **Resume Parsing** | Advanced text extraction and NLP |
-| **Database** | JSON-based storage |
-| **Deployment** | Streamlit Cloud |
+| **Primary Engine** | Anthropic Claude |
+| **Fallback Engine** | Groq (Llama 3) |
+| **Parsing System** | NLP-based text extraction |
+| **Framework** | Streamlit for the web interface |
+
+---
+
+## 🎯 Analysis Modules
+
+<table>
+<tr>
+<td valign="top" width="50%">
+
+#### 📊 ATS Evaluation Module
+**Focus:** Compatibility Scoring, Formatting, Pass-Rate Prediction
+`ATS Compatibility` · `Resume Quality` · `Interview Readiness` · `Pass Rate Prediction` · `Structure Analysis`
+
+#### 🎯 Skills Intelligence Module
+**Focus:** Keyword Matching, Gap Detection, Requirement Mapping
+`Skill Matching` · `Missing Requirements` · `Keyword Intelligence` · `Upskilling Recommendations`
+
+#### 🔧 Optimization Module
+**Focus:** Bullet Rewriting, Impact Statements, Metrics Extraction
+`AI Bullet Rewriting` · `Action Verb Strength` · `Performance Metrics` · `Content Analysis`
+
+</td>
+<td valign="top" width="50%">
+
+#### 🗺️ Career Roadmap Module
+**Focus:** 2-Year Planning, Milestones, Role Targeting
+`Career Roadmap` · `Skill Gap Analysis` · `Target Role Suggestions` · `Milestone Actions`
+
+#### 🔍 Profile Intelligence Module
+**Focus:** GitHub & LinkedIn Audits, Network Insights
+`GitHub Evaluation` · `LinkedIn Analysis` · `Professional Network` · `Tech Stack Showcase`
+
+</td>
+</tr>
+</table>
+
+> Each module scores a distinct dimension of your resume and job fit — combined into a single evaluation report.
 
 ---
 
@@ -130,8 +150,11 @@ An intelligent resume analysis tool that leverages advanced AI to evaluate, opti
 
 ### Prerequisites
 - Python 3.8 or higher
-- GROQ API Key
-- Anthropic API Key (for Claude integration)
+- Anthropic API Key (Claude)
+- Groq API Key (optional, for fallback)
+- Internet connection
+
+### Installation
 
 **1. Clone the repository**
 ```bash
@@ -155,101 +178,160 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 
-Edit `.env` and add your API keys:
+**5. Configure your API keys**
+
+Edit the `.env` file with your credentials:
 ```
-GROQ_API_KEY=your_groq_api_key
-ANTHROPIC_API_KEY=your_anthropic_api_key
+ANTHROPIC_API_KEY=your_anthropic_api_key_here
+GROQ_API_KEY=your_groq_api_key_here
 ```
 
-**5. Run the application**
+### Running the Application
 ```bash
 streamlit run app.py
 ```
 
-The application will be available at `http://localhost:8501` 🚀
+The application will open at `http://localhost:8501` 🚀
 
 ---
 
-## 📝 Usage
+## 📖 Usage
 
-| Step | Action |
+### Resume Analysis
+1. Navigate to **Analyze New Resume**
+2. Upload your resume (PDF or DOCX, max 200MB)
+3. Paste the target job description
+4. Click **Analyze Resume** to generate your report
+
+### System Configuration
+1. Go to **Settings** in the sidebar
+2. Add or update your API keys:
+   - **Claude Engine** — primary LLM provider
+   - **Groq Fallback Engine** — backup LLM provider
+3. Save configurations for persistent storage
+
+### Results Dashboard
+- View the **ATS Evaluation Dashboard** (compatibility, quality, readiness)
+- Explore the **dimension-wise breakdown** radar chart
+- Review **matched vs. missing skills**
+- Open your **Career Roadmap** and **interview prep questions**
+
+---
+
+## 🔧 System Configuration
+
+### Claude Engine
+Provides intelligent, nuanced resume analysis and bullet rewriting.
+- **Setup:** add your Anthropic API key
+- **Documentation:** [docs.claude.com](https://docs.claude.com)
+- **Benefits:** strong language understanding, high-quality rewrites
+
+### Groq Fallback Engine
+A fast fallback provider using Llama 3 when the primary quota is exhausted.
+- **Setup:** get a free key at [console.groq.com/keys](https://console.groq.com/keys)
+- **Benefits:** ensures continuous operation with no service interruption
+- **Model:** Llama 3 (optimized for speed)
+
+---
+
+## 📊 Performance Metrics
+
+| Metric | Value |
 |---|---|
-| 1️⃣ | **Upload Your Resume** — click "Upload" in the sidebar (PDF or DOCX, max 200MB) |
-| 2️⃣ | **Analyze Your Resume** — go to "Analyze New Resume," paste a job description, and click "Analyze Resume" |
-| 3️⃣ | **Review Results** — view the ATS Evaluation Dashboard, dimension-wise breakdown, and skills matching |
-| 4️⃣ | **Get Optimization Suggestions** — explore bullet rewrite suggestions and implement feedback |
-| 5️⃣ | **Career Planning** — review your personalized roadmap and skill gap recommendations |
-| 6️⃣ | **Interview Preparation** — study prep questions and response strategy blueprints |
+| **Resumes Analyzed** | 1000+ |
+| **Average ATS Improvement** | +15 points |
+| **Interview Success Rate** | 78% |
+| **User Satisfaction** | 4.8 / 5 |
 
 ---
 
-## 📊 Example Output
+## 📁 Project Structure
 
-**ATS Evaluation Metrics**
-| Metric | Result |
+```bash
+ResumeIQ/
+├── app.py                  # Main Streamlit application
+├── config/
+│   ├── modules.py          # Analysis module definitions
+│   └── llm_config.py       # LLM configuration
+├── modules/
+│   ├── ats_evaluator.py    # ATS scoring engine
+│   ├── skills_engine.py    # Skills matching & gap analysis
+│   ├── optimizer.py        # Bullet rewriting & content analysis
+│   ├── career_roadmap.py   # Career planning module
+│   └── profile_audit.py    # GitHub/LinkedIn analysis
+├── utils/
+│   ├── api_handler.py      # API integration
+│   └── helpers.py          # Utility functions
+├── requirements.txt        # Python dependencies
+├── .env.example             # Environment variables template
+└── README.md
+```
+
+---
+
+## 🛠️ Technologies Used
+
+| Category | Technology |
 |---|---|
-| ATS Compatibility | 84% (Strong Match) |
-| Resume Quality | 85% (Content Quality) |
-| Interview Readiness | 86% (Excellent) |
-| Pass Rate | High (Estimated Likelihood) |
+| **Frontend** | Streamlit |
+| **LLM Providers** | Anthropic Claude, Groq (Llama 3) |
+| **Core Libraries** | `streamlit`, `anthropic`, `groq`, `python-dotenv`, `requests` |
 
-**Skills Analysis**
-- **Matched Skills:** Python, SQL, Scala, TensorFlow, Keras, PyTorch, and more
-- **Missing Requirements:** Cloud Data, Algorithms, Azure
-- **Recommended Upskilling:** NLP, Computer Vision
+### Dependencies
+```
+streamlit>=1.28.0
+anthropic>=0.18.0
+groq>=0.4.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+```
 
-**Career Recommendations**
-- **Suggested Role:** Senior Data Scientist (90% Match)
-- **Career Path:** 2-year plan from Foundation → Development → Placement → Long-term
-
----
-
-## 🎯 Features Breakdown
-
-| Module | What It Does |
-|---|---|
-| **Resume Intelligence** | Extracts and analyzes resume content, performs ATS checks, identifies formatting issues, scores quality across dimensions |
-| **Skills Intelligence Engine** | Matches skills against job requirements, identifies gaps, recommends upskilling priorities |
-| **Optimization & Editor** | Suggests stronger action verbs and metric-driven bullets, flags weak phrasing, provides impact analysis |
-| **Career Roadmap & Prep** | Generates 2-year development plans, role-specific interview questions, and response strategy blueprints |
-| **Profile & Compliance Audit** | Analyzes GitHub repository quality, evaluates LinkedIn optimization, checks resume section completeness |
+Install all dependencies:
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
-## 📈 Performance Metrics
+## 🔒 Security & Privacy
 
-The platform evaluates resumes across multiple weighted dimensions:
-
-| Dimension | Weight |
-|---|---|
-| Technical Skills Match | 25% |
-| Experience Relevance | 25% |
-| Leadership & Growth | 15% |
-| Cultural Fit | 10% |
-| Presentation Quality | 10% |
-| Sustainability & Innovation | 10% |
-| Professional Network | Bonus metric |
-
----
-
-## 🔐 Privacy & Security
-
-- Resumes are processed securely using enterprise-grade APIs
+- API keys are stored locally in the `.env` file
+- The `.env` file should never be committed to version control
 - No resume data is stored permanently on public servers
 - All analysis is done in real time
-- Supports end-to-end encryption for sensitive uploads
+- Sensitive data is managed through environment variables
 
 ---
 
-## 🤝 Contributing
+## ☁️ Deployment
 
-We welcome contributions! Please follow these steps:
+### Streamlit Cloud (Recommended)
+1. Push your code to GitHub
+2. Connect the repo to Streamlit Cloud
+3. Add environment secrets in the Streamlit dashboard: `ANTHROPIC_API_KEY`, `GROQ_API_KEY`
+4. Deploy automatically
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a pull request
+### Docker
+```bash
+docker build -t resumeiq .
+docker run -p 8501:8501 resumeiq
+```
+
+### Traditional Server
+```bash
+streamlit run app.py --server.port 8501
+```
+
+---
+
+## 💡 Best Use Cases
+
+1. **Job Application Prep** — optimize your resume before applying to a specific role
+2. **ATS Troubleshooting** — diagnose why a resume isn't passing automated screening
+3. **Career Planning** — get a structured, milestone-based development roadmap
+4. **Interview Readiness** — practice with role-specific prep questions
+5. **Profile Auditing** — strengthen your GitHub and LinkedIn presence
+6. **Skill Gap Closure** — identify and prioritize upskilling for a target role
 
 ---
 
@@ -261,64 +343,77 @@ We welcome contributions! Please follow these steps:
 - [ ] Video interview preparation module
 - [ ] Resume design templates
 - [ ] Batch resume analysis for recruiters
-- [ ] API for enterprise integration
-- [ ] Mobile application
+- [ ] Enterprise API
+- [ ] Mobile app support
 
 ---
 
-## 🐛 Bug Reports & Feature Requests
+## 🤝 Contributing
 
-Found a bug or have a feature request? Please create an issue on GitHub with:
-- A clear description of the issue
-- Steps to reproduce (for bugs)
-- Expected vs. actual behavior
-- Screenshots (if applicable)
+Contributions are welcome! Please:
 
----
-
-## 📞 Support
-
-For questions and support:
-- Open an issue on GitHub
-- Check existing documentation
-- Review the FAQ section
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a pull request
 
 ---
 
-## 📄 License
+## ❓ FAQ
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+**What file formats are supported?**
+PDF and DOCX resumes up to 200MB.
 
----
+**What happens if the Claude API quota is exceeded?**
+The system automatically falls back to Groq's Llama 3 engine for uninterrupted service.
 
-## 👨‍💻 Author
+**Is my resume data stored?**
+No — resumes are processed in real time and not stored permanently.
 
-**ResumeIQ Development Team**
-
----
-
-## 🙏 Acknowledgments
-
-- **GROQ API** for powerful LLM inference
-- **Anthropic Claude** for advanced AI capabilities
-- **Streamlit** for the excellent web framework
-- All contributors and users for their feedback
+**Can I run this locally?**
+Yes! Follow the installation steps above to run it on your own machine.
 
 ---
 
-## 📊 Statistics
-
-| Metric | Value |
-|---|---|
-| Resumes Analyzed | 1000+ |
-| Average ATS Improvement | +15 points |
-| Interview Success Rate | 78% |
-| User Satisfaction | 4.8/5 |
-
----
+## 👤 Credits & Contact
 
 <div align="center">
 
-**Quick Links:** [Live Demo](https://resumeiq-aybfmvsyuvh5mra4savae2.streamlit.app) · [Report a Bug](https://github.com/yourusername/ResumeIQ/issues) · [Request a Feature](https://github.com/yourusername/ResumeIQ/issues)
+🚀
+
+### Built by [Your Name](https://github.com/your-username)
+
+*"Turn resume review into a data-driven process."*
+
+</div>
+
+<br/>
+
+> 📬 **Get in touch** — reach out on [GitHub](https://github.com/your-username), [X / Twitter](https://twitter.com/your-username), or via [email](mailto:support@resumeiq.dev).
+>
+> 🐛 **Found a bug?** [Open an issue](https://github.com/your-username/resumeiq/issues) with a detailed description and I'll take a look.
+>
+> 💡 **Have an idea for a new module?** [Start a discussion](https://github.com/your-username/resumeiq/discussions) — I'd love to hear it.
+>
+> ⭐ **Finding ResumeIQ useful?** A star on the repo helps others discover it too.
+
+<br/>
+
+ResumeIQ is built on **Streamlit**, powered by **Anthropic Claude** with **Groq (Llama 3)** as a fallback engine.
+
+<div align="center">
+
+<br/>
+
+<sub>⭐ If ResumeIQ helped you land your next interview, consider giving it a star.</sub>
+
+<br/>
+
+**Version 1.0.0** · Status: ✅ Active & Maintained
+
+<br/>
+
+**[⬆ Back to top](#top)**
 
 </div>
